@@ -2,61 +2,35 @@
 
 ---
 
-### Q1: What does the following C code print?
+### Q1: What is a pointer and how is it used in programming?
 
-```c
-int x = 10;
-int *p = &x;
-printf("%d", *p);
-```
-
-**A.** Memory address of x  
-**B.** 10  
-**C.** Compilation error  
-**D.** Garbage value  
-
-**Correct Answer:** B
+**Answer:**  
+A pointer is a variable that stores the memory address of another variable. It is used to directly access and manipulate memory, allowing efficient array traversal, dynamic memory allocation, and data structure implementation.
 
 ---
 
-### Q2: In the Two-Pointer Technique, when is it typically used to start pointers at both ends of the array?
+### Q2: What are the main differences between stack and heap memory?
 
-**A.** To reverse an array  
-**B.** To find a pivot  
-**C.** To perform binary search  
-**D.** To find two numbers that sum to a target in a sorted array  
-
-**Correct Answer:** D
+**Answer:**  
+Stack memory is automatically managed and used for static memory allocation (e.g., local variables), while heap memory is dynamically managed and used for objects whose lifetime is controlled manually. Stack is faster but limited in size; heap is larger but slower.
 
 ---
 
-### Q3: What is the primary use of fast and slow pointers in linked lists?
+### Q3: Explain the two-pointer technique with an example.
 
-**A.** Sorting a linked list  
-**B.** Finding maximum value  
-**C.** Detecting cycles  
-**D.** Reversing the list  
-
-**Correct Answer:** C
+**Answer:**  
+The two-pointer technique involves using two indices to traverse a data structure, often to reduce time complexity. For example, to find two numbers in a sorted array that sum to a target, one pointer starts from the beginning, another from the end, and they move inward based on the sum.
 
 ---
 
-### Q4: Which of the following is true about memory access?
+### Q4: What is pointer arithmetic and when is it useful?
 
-**A.** Random access is always faster than sequential  
-**B.** Temporal locality prefers distant addresses  
-**C.** Spatial locality favors accessing adjacent memory  
-**D.** Cache misses happen only in linked lists  
-
-**Correct Answer:** C
+**Answer:**  
+Pointer arithmetic involves adding or subtracting integers to move a pointer across contiguous memory blocks, such as arrays. It's useful for iterating through memory efficiently without relying on indices.
 
 ---
 
-### Q5: What happens when you dereference a null pointer?
+### Q5: Why is understanding memory access patterns important for performance?
 
-**A.** Returns 0  
-**B.** Program crashes or undefined behavior  
-**C.** Returns the memory address  
-**D.** Compiles without issue and runs safely  
-
-**Correct Answer:** B
+**Answer:**  
+Efficient memory access patterns, such as sequential access, utilize CPU caching better and lead to faster execution. Poor access patterns can cause cache misses, increasing latency and degrading performance.
